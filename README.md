@@ -1,12 +1,12 @@
 ### Java Spring template project
 
-This project is based on a GitLab [Project Template](https://docs.gitlab.com/ee/gitlab-basics/create-project.html)
+This project is based on a GitLab [Project Template](https://docs.gitlab.com/ee/gitlab-basics/create-project.html).
 
-Additions and changes to the project can be proposed in the [original project](https://gitlab.com/gitlab-org/project-templates/spring)
+Additions and changes to the project can be proposed in the [original project](https://gitlab.com/gitlab-org/project-templates/spring).
 
 ### CI/CD with Auto DevOps
 
 This template is compatible with [Auto DevOps](https://docs.gitlab.com/ee/topics/autodevops/).
 
-If Auto DevOps is not already enabled for this project, you can [turn it on](https://docs.gitlab.com/ee/topics/autodevops/#enabling-auto-devops)
-in the project settings. Otherwise, you can create a custom `.gitlab-ci.yml` file and customize it.
+If Auto DevOps is not already enabled for this project, you can [turn it on](https://docs.gitlab.com/ee/topics/autodevops/#enabling-auto-devops) in the project settings.  
+Otherwise, you can create a custom `.gitlab-ci.yml` file and customize it.
