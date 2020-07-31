@@ -1,15 +1,12 @@
 package com.example.demo;
 
-import org.junit.Test;
-import org.junit.runner.RunWith;
+import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.test.context.SpringBootTest.WebEnvironment;
 import org.springframework.boot.test.web.client.TestRestTemplate;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.test.context.junit4.SpringRunner;
-import static org.assertj.core.api.Assertions.assertThat;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
-@RunWith(SpringRunner.class)
 @SpringBootTest(webEnvironment = WebEnvironment.RANDOM_PORT)
 public class DemoApplicationTests {
 
@@ -23,6 +20,6 @@ public class DemoApplicationTests {
 	@Test
 	public void homeResponse() {
 		String body = this.restTemplate.getForObject("/", String.class);
-		assertThat(body).isEqualTo("Spring is here!");
+		assertEquals("Spring is here!", body);
 	}
 }
