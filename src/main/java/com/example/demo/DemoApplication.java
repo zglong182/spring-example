@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.*;
 public class DemoApplication {
 
 	@GetMapping("/")
-	String home() {
+	public String home() {
 		return "Spring is here!";
 	}
 
