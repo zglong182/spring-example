@@ -8,17 +8,17 @@ import org.springframework.beans.factory.annotation.Autowired;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 @SpringBootTest(webEnvironment = WebEnvironment.RANDOM_PORT)
-public class DemoApplicationTests {
+class DemoApplicationTests {
 
 	@Test
-	public void contextLoads() {
+	void contextLoads() {
 	}
 
 	@Autowired
 	private TestRestTemplate restTemplate;
 
 	@Test
-	public void homeResponse() {
+	void homeResponse() {
 		String body = this.restTemplate.getForObject("/", String.class);
 		assertEquals("Spring is here!", body);
 	}
