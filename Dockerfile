@@ -1,15 +1,7 @@
-FROM maven:3-jdk-8-alpine as builder
+FROM amazoncorretto:8
 
-WORKDIR /usr/src/app
+WORKDIR /home
 
-COPY . /usr/src/app
-RUN mvn package
+COPY target/*.jar /home
 
-FROM openjdk:8-jre-alpine
-
-COPY --from=builder /usr/src/app/target/*.jar /app.jar
-
-EXPOSE 8080
-
-ENTRYPOINT ["java"]
-CMD ["-jar", "/app.jar"]
+ENTRYPOINT java -jar  *.jar
